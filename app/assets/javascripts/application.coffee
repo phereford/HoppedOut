@@ -12,4 +12,4 @@
 #= require_tree ./templates
 #= require_tree ./views
 
-window.App = HoppedOut.Application.create()
+window.App = Ember.Application.create()

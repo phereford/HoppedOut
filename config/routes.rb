@@ -1,9 +1,11 @@
 Hoppedout::Application.routes.draw do
-  constraints( FormatTest.new( :json ) ) do
-    resources :batches, :except => :edit
+  constraints( FormatCheck.new( :json ) ) do
+    resources :batches, except: :edit
+    resources :hops, except: :edit
+    resources :malts, except: :edit
   end
 
-  constraints( FormatTest.new( :html ) ) do
+  constraints( FormatCheck.new( :html ) ) do
     get '*foo', :to => 'pages#index'
     get '/', :to => 'pages#index'
   end

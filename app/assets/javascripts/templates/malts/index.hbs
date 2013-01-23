@@ -1,0 +1,21 @@
+<h1>Malts</h1>
+<table class='table table-striped'>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <td>Origin</td>
+    <td>Potential SG</td>
+    <td>SRM</td>
+    <td>Type</td>
+  </tr>
+  {{#each controller}}
+    <tr>
+      <td>{{id}}</td>
+      <td><a href='#'>{{name}}</a></td>
+      <td>{{origin}}</td>
+      <td>{{potential_sg}}</td>
+      <td>{{srm}}</td>
+      <td>{{type}}</td>
+    </tr>
+  {{/each}}
+</table>

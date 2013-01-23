@@ -10,10 +10,6 @@ gem 'active_model_serializers', :github => 'rails-api/active_model_serializers'
 gem 'activerecord-postgres-hstore', github: 'engageis/activerecord-postgres-hstore'
 gem 'pg'
 
-group :development, :test do
-  gem 'pry'
-end
-
 group :assets do
   gem 'sass-rails', '~> 3.2'
   gem 'coffee-rails', '~> 3.2'
@@ -25,4 +21,23 @@ end
 
 group :development do
   gem 'quiet_assets'
+end
+
+group :test, :development do
+  gem 'rspec-rails', '2.12.0'
+  gem 'pry'
+end
+
+group :test do
+  gem 'capybara', '1.1.2'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'guard'
+  gem 'guard-brakeman'
+  gem 'guard-jasmine'
+  gem 'guard-rspec'
+  gem 'jasmine'
+  gem 'poltergeist'
+  gem 'shoulda'
+  gem 'simplecov'
 end

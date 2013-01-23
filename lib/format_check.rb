@@ -1,4 +1,4 @@
-class FormatTest
+class FormatCheck
   attr_accessor :mime_type
 
   def initialize(format)

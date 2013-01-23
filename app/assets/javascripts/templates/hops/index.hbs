@@ -1,0 +1,17 @@
+<h1>Hops</h1>
+<table class='table table-striped'>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <td>Min Alpha Acid</td>
+    <td>Max Alpha Acid</td>
+  </tr>
+  {{#each controller}}
+    <tr>
+      <td>{{id}}</td>
+      <td><a href='#'>{{name}}</a></td>
+      <td>{{min_alpha_acid}}</td>
+      <td>{{max_alpha_acid}}</td>
+    </tr>
+  {{/each}}
+</table>
